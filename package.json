@@ -1,0 +1,19 @@
+{
+  "name": "firepit.zone",
+  "version": "1.0.0",
+  "description": "bogos binted",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/FirePitZone/firepit.zone.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/FirePitZone/firepit.zone/issues"
+  },
+  "homepage": "https://github.com/FirePitZone/firepit.zone#readme"
+}

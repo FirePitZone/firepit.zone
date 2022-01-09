@@ -63,12 +63,23 @@ body {
 img             {max-width:100%; height:auto;}
 #z1             {color:#FF8040; font-family: Archivo Expanded, sans-serif; text-transform: uppercase; text-align: center; font-size: 10.1vw; margin-top: 1vw;}
 #z1 a           {color:#FF8040; font-family: Archivo Expanded, sans-serif; text-transform: uppercase; text-align: center; font-size: 10.1vw; margin-top: 1vw; text-decoration: none;}
-hr 				{margin:2vw 4vw; border: 0.7px solid #FF8040;}
+header hr 		{margin:2vw 4vw; border: 0.7px solid #FF8040;}
 p 				{font-family: Archivo, sans-serif; font-size: 1.2rem; line-height: 1.5rem;}
+h2              {font-family: Archivo, sans-serif; font-size: 2rem; line-height: 2.2rem; margin-top:2vw; margin-bottom: 3vw;}
+h2 a            {font-family: Archivo, sans-serif; font-size: 2rem; line-height: 2.2rem; color:#FF8040; text-decoration: none;}
+h2 a:hover      {cursor:pointer; text-decoration: none; color: #fff; font-family: Archivo, sans-serif; font-size: 2rem; line-height: 2.2rem;}
+h2 b            {font-family: Archivo Black, sans-serif; font-size: 2rem; line-height: 2.2rem;}
+h3              {font-family: Archivo Black, sans-serif; font-size: 1.7rem; line-height: 1.8rem;}
+h3 a            {font-family: Archivo Black, sans-serif; font-size: 1.7rem; line-height: 1.8rem; color:#FF8040; text-decoration: none;}
+h3 a:hover      {font-family: Archivo Black, sans-serif; font-size: 1.7rem; line-height: 1.8rem; cursor:pointer; text-decoration: none; color: #fff;}
+h4              {font-family: Archivo, sans-serif; font-size: 1.7rem; line-height: 1.8rem;}
+h4 a            {font-family: Archivo, sans-serif; font-size: 1.7rem; line-height: 1.8rem; color:#FF8040; text-decoration: none;}
+h4 a:hover      {font-family: Archivo, sans-serif; font-size: 1.7rem; line-height: 1.8rem; cursor:pointer; text-decoration: none; color: #fff;}
+hr              {margin-top: 3vw; margin-bottom: 3vw; border: 0.7px solid #FF8040;}
 
 main            {font-size: 1.5rem; line-height: 1.5rem; margin: 4vw; font-family: Archivo, sans-serif;}
-main a          {color:#FF8040; text-decoration: none; font-weight:bold;}
-main a:hover    {cursor:pointer; text-decoration: none;}
+main p a          {color:#FF8040; text-decoration: none; font-family: Archivo Black, sans-serif;}
+main p a:hover    {cursor:pointer; text-decoration: none; color: #fff}
 figure          {margin: 0 auto;}
 .quote          {float: center; text-align: left; width: 60%; margin: auto; padding-left:2rem; border-left:4px solid #FF8040; font-style:oblique; font-weight:bold;}
 blockquote      {margin: 1rem auto;}
@@ -77,5 +88,6 @@ blockquote      {margin: 1rem auto;}
 #nav-item a:hover    {cursor:pointer; text-decoration: none; color: #fff}
 nav                  {margin: 0 4vw; color:#FF8040; display:  flex; justify-content: space-between; font-family: Archivo, sans-serif; font-size: 1.5rem; line-height: 1.5rem;}
 
-footer          {height:100px; margin: 4vw; margin-top: auto; display: flex; justify-content: space-between; align-items: flex-end;} 
+footer          {height:100px; margin: 4vw; margin-top: auto; display: flex; justify-content: space-between; align-items: flex-end; font-size: 1rem; line-height: 1.2rem;} 
 footer img      {display: block; height: inherit;}
+

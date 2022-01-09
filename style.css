@@ -67,7 +67,7 @@ hr 				      {margin:2vw 4vw; border: 0.7px solid #FF8040;}
 p 				      {font-family: Archivo, sans-serif; font-size: 1.2rem; line-height: 1.5rem;}
 
 main            {font-size: 1.5rem; line-height: 1.5rem; margin: auto; padding: 0 4vw; font-family: Archivo, sans-serif; max-width: 50ch;}
-main p          {margin: 2rem auto; overflow-wrap: break-word; }
+main p          {margin: 2rem auto; overflow-wrap: break-word;}
 main a          {color:#FF8040; text-decoration: none; font-weight:bold;}
 main a:hover    {cursor:pointer; text-decoration: none;}
 figure          {margin: 3rem auto;}
@@ -86,7 +86,10 @@ footer img      {display: block; height: inherit;}
   * {
     font-size: 1.2em;
   }
-
+  p {
+    font-size: 2rem;
+    line-height: 3.2rem;
+  }
   #nav-item, nav span {
     flex-basis: 100%;
     font-size: 2rem;

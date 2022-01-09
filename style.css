@@ -1,20 +1,71 @@
-* {font-family: monospace; margin: 0;}
+* {font-family: sans-serif; margin: 0;}
+
+
+@font-face {
+  font-family: Archivo Regular;
+  src: url("Archivo-Regular.ttf");
+  font-style: normal;
+  font-weight: 400;
+  font-stretch: normal;
+}
+
+@font-face {
+  font-family: Archivo Italic;
+  src: url("Archivo-Italic.ttf");
+  font-style: italic;
+  font-weight: 400;
+  font-stretch: normal;
+}
+
+@font-face {
+  font-family: Archivo Black;
+  src: url("Archivo-Black.ttf");
+  font-style: normal;
+  font-weight: 900;
+  font-stretch: normal;
+}
+
+@font-face {
+  font-family: Archivo Black Italic;
+  src: url("Archivo-BlackItalic.ttf");
+  font-style: italic;
+  font-weight: 900;
+  font-stretch: normal;
+}
+
+@font-face {
+  font-family: Archivo Expanded;
+  src: url("Archivo_Expanded-Black.ttf");
+  font-style: normal;
+  font-weight: 900;
+  font-stretch: expanded;
+}
+
+@font-face {
+  font-family: Archivo Expanded;
+  src: url("Archivo_Expanded-BlackItalic.ttf");
+  font-style: italic;
+  font-weight: 900;
+  font-stretch: expanded;
+}
+
 body {
 	background: #181311; 
 	color: #eee;
 	font-size: 1rem;
-    margin: 1rem auto;
-    padding: 1rem 2rem;
-    max-width: 440px;
-    text-align: center;
+    margin: 0 auto;
+    text-align: left;
 }
 img             {max-width:100%; height:auto;}
-header          {border: 0px dotted #444; border-radius: 5px; padding: 1em;}
-h1              {font-family: serif; font-size: 4em; margin: .25em; font-style:oblique; text-transform: uppercase;}
+#z1             {color:#FF8040; font-family: Archivo Expanded, sans-serif; text-transform: uppercase; text-align: center; font-size: 10.1vw; margin-top: 1vw;}
 hr 				{margin:2rem 0; border: 1px solid #444;}
-p 				{font-family: monospace;}
-main a          {color:#e8652d; text-decoration: underline; font-weight:bold;}
+p 				{font-family: Archivo, sans-serif;}
+main a          {color:#FF8040; text-decoration: none; font-weight:bold; font-size: 1.5rem; line-height: 1.5rem;}
 main a:hover    {cursor:pointer; text-decoration: none;}
 figure          {margin: 0 auto;}
-.quote          {float: center; text-align: left; width: 60%; margin: auto; padding-left:2rem; border-left:4px solid #e8652d; font-style:oblique; font-weight:bold;}
+.quote          {float: center; text-align: left; width: 60%; margin: auto; padding-left:2rem; border-left:4px solid #FF8040; font-style:oblique; font-weight:bold;}
 blockquote      {margin: 1rem auto;}
+
+#nav-item a          {color:#FF8040; text-decoration: none;}
+#nav-item a:hover    {cursor:pointer; text-decoration: none;}
+nav                  {margin: 0 4vw; color:#FF8040; display:  flex; justify-content: space-between; font-size: 1.5rem; line-height: 1.5rem;}

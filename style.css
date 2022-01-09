@@ -1,53 +1,16 @@
+/* Global */
+
 * {font-family: sans-serif; font-size: 1.2em; margin: 0;}
 ::selection {background: #eee; opacity:1.0; color:#000;}
 
-@font-face {
-  font-family: Archivo;
-  src: url("fonts/Archivo-Regular.ttf");
-  font-style: normal;
-  font-weight: 400;
-  font-stretch: normal;
-}
+/* Font Definitions */
 
-@font-face {
-  font-family: Archivo;
-  src: url("fonts/Archivo-Italic.ttf");
-  font-style: italic;
-  font-weight: 400;
-  font-stretch: normal;
-}
-
-@font-face {
-  font-family: Archivo Black;
-  src: url("fonts/Archivo-Black.ttf");
-  font-style: normal;
-  font-weight: 900;
-  font-stretch: normal;
-}
-
-@font-face {
-  font-family: Archivo Black;
-  src: url("fonts/Archivo-BlackItalic.ttf");
-  font-style: italic;
-  font-weight: 900;
-  font-stretch: normal;
-}
-
-@font-face {
-  font-family: Archivo Expanded;
-  src: url("fonts/Archivo_Expanded-Black.ttf");
-  font-style: normal;
-  font-weight: 900;
-  font-stretch: expanded;
-}
-
-@font-face {
-  font-family: Archivo Expanded;
-  src: url("fonts/Archivo_Expanded-BlackItalic.ttf");
-  font-style: italic;
-  font-weight: 900;
-  font-stretch: expanded;
-}
+@font-face {font-family: Archivo; src: url("fonts/Archivo-Regular.ttf"); font-style: normal; font-weight: 400; font-stretch: normal;}
+@font-face {font-family: Archivo; src: url("fonts/Archivo-Italic.ttf"); font-style: italic; font-weight: 400; font-stretch: normal;}
+@font-face {font-family: Archivo Black; src: url("fonts/Archivo-Black.ttf"); font-style: normal; font-weight: 900; font-stretch: normal;}
+@font-face {font-family: Archivo Black; src: url("fonts/Archivo-BlackItalic.ttf"); font-style: italic; font-weight: 900; font-stretch: normal;}
+@font-face {font-family: Archivo Expanded; src: url("fonts/Archivo_Expanded-Black.ttf"); font-style: normal; font-weight: 900; font-stretch: expanded;}
+@font-face {font-family: Archivo Expanded; src: url("fonts/Archivo_Expanded-BlackItalic.ttf"); font-style: italic; font-weight: 900; font-stretch: expanded;}
 
 body {
   min-height: 100vh;
@@ -60,29 +23,66 @@ body {
   text-align: left;
 }
 
-img             {max-width:100%; height:auto;}
-#z1             {color:#FF8040; font-family: Archivo Expanded, sans-serif; text-transform: uppercase; text-align: center; font-size: 10.1vw; margin-top: 1vw;}
-#z1 a           {color:#FF8040; font-family: Archivo Expanded, sans-serif; text-transform: uppercase; text-align: center; font-size: 10.1vw; margin-top: 1vw; text-decoration: none;}
-hr 				      {margin:2vw 4vw; border: 0.7px solid #FF8040;}
+/* Links */
+
+a       {text-decoration: none; color:#FF8040}
+a:hover {cursor: pointer: color: #fff}
+main a  {font-family: Archivo Black, sans-serif;}
+
+img     {max-width:100%; height:auto;}
+
+/* Headers */
+
+h2, h2 a, h3, h4  {font-family: Archivo, sans-serif; font-size: 2rem;  line-height: 2.2rem;}
+
+h3, h4            {font-size: 1.7rem; line-height: 1.8rem;}
+
+h2 b, h3          {font-family: Archivo Black, sans-serif;}
+
+h2 a:hover, h3 a:hover, h4 a:hover {
+  color: #fff;
+}
+
+#z1, #z1 a      {color:#FF8040; font-family: Archivo Expanded, sans-serif; text-transform: uppercase; text-align: center; font-size: 10.1vw; margin-top: 1vw;}
+
+/* Header/Nav */
+
+header hr       {margin: 2vw 4vw; border: 0.7px solid #FF8040;}
+nav             {margin: 0 4vw; color:#FF8040; display: flex; justify-content: space-between; flex-wrap: wrap; font-family: Archivo, sans-serif;}
+nav a:hover     {color: #fff;}
+nav span        {font-family: Archivo Black, sans-serif;}
+
+/* Main */
+
+hr              {margin: 3vw 0; border: 0.7px solid #FF8040;}
+
 p 				      {font-family: Archivo, sans-serif; font-size: 1.2rem; line-height: 1.5rem;}
 
-main            {font-size: 1.5rem; line-height: 1.5rem; margin: auto; padding: 0 4vw; font-family: Archivo, sans-serif; max-width: 50ch;}
+main            {font-size: 1.5rem; line-height: 1.5rem; margin: 4vw 4vw; padding: 0 4vw; font-family: Archivo, sans-serif; } /*max-width: 50ch;*/
 main p          {margin: 2rem auto; overflow-wrap: break-word;}
-main a          {color:#FF8040; text-decoration: none; font-weight:bold;}
-main a:hover    {cursor:pointer; text-decoration: none;}
-figure          {margin: 3rem auto;}
-.quote          {float: center; text-align: left; width: 60%; padding-left:2rem; border-left:4px solid #FF8040; font-style:oblique; font-weight:bold; line-height: 1.2rem;}
+main p a        {font-family: Archivo Black, sans-serif;}
+
+figure          {margin: 1rem;}
+.quote          {float: center; text-align: left; width: 60%; padding-left:2rem; border-left:8px solid #FF8040; font-style:oblique; font-weight:bold; line-height: 1.2rem;}
 blockquote      {margin: 1rem auto; line-height: 2.5rem;}
 
-#nav-item a          {color:#FF8040; text-decoration: none; flex-basis: 200px; flex-wrap: wrap;}
-#nav-item a:hover    {cursor:pointer; text-decoration: none; color: #fff}
-nav                  {margin: 0 4vw; color:#FF8040; display: flex; justify-content: space-between; flex-wrap: wrap; font-family: Archivo, sans-serif;}
+article         {max-width: 50ch;}
+
+/* Gallery */
+
+#gallery        {width: 100%; display: flex; flex-flow: row wrap; margin: 2rem;}
+
+#gallery img    {max-height: 25vw; object-fit: contain; margin: .25rem;}
+
+/* Footer */
 
 footer          {height:100px; margin: 4vw; margin-top: auto; display: flex; justify-content: space-between; align-items: flex-end;} 
 footer img      {display: block; height: inherit;}
 
+/* -------------------------------------- */
+
+/* Mobile */
 @media (max-aspect-ratio: 7/6) {
-  /* Mobile */
   * {
     font-size: 1.2em;
   }
@@ -95,5 +95,8 @@ footer img      {display: block; height: inherit;}
     font-size: 2rem;
     line-height: 3.2rem;
   }
-
+  nav span {color: #333;}
+  #gallery img {
+    max-height: 50vw;
+  }
 }

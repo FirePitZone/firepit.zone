@@ -50,13 +50,14 @@
 }
 
 body {
-    display: flex;
-    flex-direction: column;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
 	background: #181311; 
 	color: #FF8040;
 	font-size: 1rem;
-    margin: 0 auto;
-    text-align: left;
+  margin: 0 auto;
+  text-align: left;
 }
 
 img             {max-width:100%; height:auto;}
@@ -76,8 +77,5 @@ blockquote      {margin: 1rem auto;}
 #nav-item a:hover    {cursor:pointer; text-decoration: none; color: #fff}
 nav                  {margin: 0 4vw; color:#FF8040; display:  flex; justify-content: space-between; font-family: Archivo, sans-serif; font-size: 1.5rem; line-height: 1.5rem;}
 
-footer          {max-height:150px; margin: 4vw; display:  flex; justify-content: space-between; }
-footer div      {flex-basis: content;}
-footer span     {position: inherit; bottom: 0;}
-footer img      {display: block; max-height: 100%; max-width: 100%; float: right;}
-#footer-img     {align-self: flex-end;}
+footer          {height:100px; margin: 4vw; margin-top: auto; display: flex; justify-content: space-between; align-items: flex-end;} 
+footer img      {display: block; height: inherit;}

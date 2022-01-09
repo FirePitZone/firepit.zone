@@ -15,5 +15,10 @@
   "bugs": {
     "url": "https://github.com/FirePitZone/firepit.zone/issues"
   },
-  "homepage": "https://github.com/FirePitZone/firepit.zone#readme"
+  "homepage": "https://github.com/FirePitZone/firepit.zone#readme",
+  "dependencies": {
+    "express": "^4.17.2",
+    "fs": "^0.0.1-security",
+    "http": "^0.0.1-security"
+  }
 }

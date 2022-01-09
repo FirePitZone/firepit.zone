@@ -73,9 +73,19 @@ figure          {margin: 0 auto;}
 .quote          {float: center; text-align: left; width: 60%; margin: auto; padding-left:2rem; border-left:4px solid #FF8040; font-style:oblique; font-weight:bold;}
 blockquote      {margin: 1rem auto;}
 
-#nav-item a          {color:#FF8040; text-decoration: none;}
+#nav-item a          {color:#FF8040; text-decoration: none; flex-basis: 200px; flex-wrap: wrap;}
 #nav-item a:hover    {cursor:pointer; text-decoration: none; color: #fff}
-nav                  {margin: 0 4vw; color:#FF8040; display:  flex; justify-content: space-between; font-family: Archivo, sans-serif; font-size: 1.5rem; line-height: 1.5rem;}
+nav                  {margin: 0 4vw; color:#FF8040; display: flex; justify-content: space-between; flex-wrap: wrap; font-family: Archivo, sans-serif; font-size: 1.5rem; line-height: 1.5rem;}
 
 footer          {height:100px; margin: 4vw; margin-top: auto; display: flex; justify-content: space-between; align-items: flex-end;} 
 footer img      {display: block; height: inherit;}
+
+@media (max-width: 600px) {
+  /* Mobile */
+  #nav-item, nav span {
+    flex-basis: 100%;
+    font-size: 3rem;
+    line-height: 3.2rem;
+  }
+
+}

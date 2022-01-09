@@ -2,16 +2,16 @@
 
 
 @font-face {
-  font-family: Archivo Regular;
-  src: url("Archivo-Regular.ttf");
+  font-family: Archivo;
+  src: url("fonts/Archivo-Regular.ttf");
   font-style: normal;
   font-weight: 400;
   font-stretch: normal;
 }
 
 @font-face {
-  font-family: Archivo Italic;
-  src: url("Archivo-Italic.ttf");
+  font-family: Archivo;
+  src: url("fonts/Archivo-Italic.ttf");
   font-style: italic;
   font-weight: 400;
   font-stretch: normal;
@@ -19,15 +19,15 @@
 
 @font-face {
   font-family: Archivo Black;
-  src: url("Archivo-Black.ttf");
+  src: url("fonts/Archivo-Black.ttf");
   font-style: normal;
   font-weight: 900;
   font-stretch: normal;
 }
 
 @font-face {
-  font-family: Archivo Black Italic;
-  src: url("Archivo-BlackItalic.ttf");
+  font-family: Archivo Black;
+  src: url("fonts/Archivo-BlackItalic.ttf");
   font-style: italic;
   font-weight: 900;
   font-stretch: normal;
@@ -35,7 +35,7 @@
 
 @font-face {
   font-family: Archivo Expanded;
-  src: url("Archivo_Expanded-Black.ttf");
+  src: url("fonts/Archivo_Expanded-Black.ttf");
   font-style: normal;
   font-weight: 900;
   font-stretch: expanded;
@@ -43,29 +43,41 @@
 
 @font-face {
   font-family: Archivo Expanded;
-  src: url("Archivo_Expanded-BlackItalic.ttf");
+  src: url("fonts/Archivo_Expanded-BlackItalic.ttf");
   font-style: italic;
   font-weight: 900;
   font-stretch: expanded;
 }
 
 body {
+    display: flex;
+    flex-direction: column;
 	background: #181311; 
-	color: #eee;
+	color: #FF8040;
 	font-size: 1rem;
     margin: 0 auto;
     text-align: left;
 }
+
 img             {max-width:100%; height:auto;}
 #z1             {color:#FF8040; font-family: Archivo Expanded, sans-serif; text-transform: uppercase; text-align: center; font-size: 10.1vw; margin-top: 1vw;}
-hr 				{margin:2rem 0; border: 1px solid #444;}
-p 				{font-family: Archivo, sans-serif;}
-main a          {color:#FF8040; text-decoration: none; font-weight:bold; font-size: 1.5rem; line-height: 1.5rem;}
+#z1 a           {color:#FF8040; font-family: Archivo Expanded, sans-serif; text-transform: uppercase; text-align: center; font-size: 10.1vw; margin-top: 1vw; text-decoration: none;}
+hr 				{margin:2vw 4vw; border: 0.7px solid #FF8040;}
+p 				{font-family: Archivo, sans-serif; font-size: 1.2rem; line-height: 1.5rem;}
+
+main            {font-size: 1.5rem; line-height: 1.5rem; margin: 4vw; font-family: Archivo, sans-serif;}
+main a          {color:#FF8040; text-decoration: none; font-weight:bold;}
 main a:hover    {cursor:pointer; text-decoration: none;}
 figure          {margin: 0 auto;}
 .quote          {float: center; text-align: left; width: 60%; margin: auto; padding-left:2rem; border-left:4px solid #FF8040; font-style:oblique; font-weight:bold;}
 blockquote      {margin: 1rem auto;}
 
 #nav-item a          {color:#FF8040; text-decoration: none;}
-#nav-item a:hover    {cursor:pointer; text-decoration: none;}
-nav                  {margin: 0 4vw; color:#FF8040; display:  flex; justify-content: space-between; font-size: 1.5rem; line-height: 1.5rem;}
+#nav-item a:hover    {cursor:pointer; text-decoration: none; color: #fff}
+nav                  {margin: 0 4vw; color:#FF8040; display:  flex; justify-content: space-between; font-family: Archivo, sans-serif; font-size: 1.5rem; line-height: 1.5rem;}
+
+footer          {max-height:150px; margin: 4vw; display:  flex; justify-content: space-between; }
+footer div      {flex-basis: content;}
+footer span     {position: inherit; bottom: 0;}
+footer img      {display: block; max-height: 100%; max-width: 100%; float: right;}
+#footer-img     {align-self: flex-end;}

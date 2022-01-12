@@ -81,6 +81,8 @@ article         {max-width: 50ch;}
 footer          {height:100px; margin: 4vw; margin-top: auto; display: flex; justify-content: space-between; align-items: flex-end;} 
 footer img      {display: block; height: inherit;}
 
+.errorpage     {background-image: url("img/firepitoriole-watermark.png"); background-position: center; background-repeat: no-repeat;  background-size: auto 100%;}
+
 /* -------------------------------------- */
 
 /* Mobile */

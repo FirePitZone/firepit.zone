@@ -68,7 +68,7 @@ p 				{font-family: Archivo, sans-serif; font-size: 1.2rem; line-height: 1.5rem;
 
 main            {font-size: 1.5rem; line-height: 1.5rem; margin: 4vw; font-family: Archivo, sans-serif;}
 main a          {color:#FF8040; text-decoration: none; font-weight:bold;}
-main a:hover    {cursor:pointer; text-decoration: none;}
+main a:hover    {cursor:pointer; text-decoration: none; color: #fff;}
 figure          {margin: 0 auto;}
 .quote          {float: center; text-align: left; width: 60%; margin: auto; padding-left:2rem; border-left:4px solid #FF8040; font-style:oblique; font-weight:bold;}
 blockquote      {margin: 1rem auto;}
